@@ -1,0 +1,7 @@
+.main__site--nav{
+    @include spaceBetween;
+    @include centerVertically;
+    .site-text{
+        font-size: 24px;
+    }
+}

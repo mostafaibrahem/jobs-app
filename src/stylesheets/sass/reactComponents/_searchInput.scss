@@ -1,0 +1,23 @@
+.search__input--wrapper {
+    @include centeredHorizontally;
+    margin: 20px 0px;
+    input {
+        width: 776px;
+        max-width: 90%;
+        height: 75px;
+        background-image: url("../../resources/images/search-icon.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        font-size: 26px;
+        border: 1px solid $color-black;
+        box-sizing: border-box;
+        border-radius: 5px;
+        overflow: hidden;
+        &:hover{
+            border:1px solid $color-gray-dark;
+        }
+        &:active{
+            border:1px solid $color-gray-dark;
+        }
+    }
+}

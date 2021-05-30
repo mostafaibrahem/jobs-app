@@ -1,0 +1,22 @@
+.jobs__list--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-gray-light;
+    margin: 10px 0px;
+}
+
+.job__item--wrapper{
+    width: calc(50% - 40px);
+    background-color: $color-white;
+    //height: 280px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    .job-title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    @include mq('tablet'){
+        width: calc(100% - 40px);
+    }
+}

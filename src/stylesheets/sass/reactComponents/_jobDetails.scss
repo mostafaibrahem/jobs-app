@@ -1,0 +1,14 @@
+
+.related__skills--wrapper{
+    margin: 0px 30px;
+    margin-top: 40px;
+
+}
+.skill__item--wrapper{
+    padding: 10px;
+    background-color: $color-gray-light;
+    margin: 10px 20px;
+    .skill-details{
+        @include spaceBetween;
+    }
+}

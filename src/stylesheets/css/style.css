@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body .rtl-direction {
+  direction: rtl;
+}
+
+:root {
+  --color-page-background: white;
+  --color-text: black;
+  --color-border: black;
+  --color-article-background: white;
+  --color-article-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.dark {
+  --color-page-background: black;
+  --color-text: white;
+  --color-border: white;
+  --color-article-background: #e5e5e5;
+  --color-article-shadow: rgba(0, 0, 0, 0.15);
+}
+
+* {
+  transition: all 0.15s ease;
+}
+
+body {
+  background-color: var(--color-page-background);
+  font: 1.1em/1.4 Dosis;
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  max-width: 40rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+article {
+  padding: 2rem;
+  background-color: var(--color-article-background);
+  box-shadow: 6px 6px 0 0 var(--color-article-shadow);
+}
+
+h1 {
+  color: unset;
+}
+
+.switch {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+  border-radius: 50%;
+}
+
+.container {
+  margin: 5px 10px;
+}
+
+/************MEDIA QUERY ********************/
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px 10px;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin: 0px 10px;
+}
+
+.bg-light-gray {
+  background-color: #e5e5e5;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.home-header {
+  display: flex;
+}
+
+.main__site--nav {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.main__site--nav .site-text {
+  font-size: 24px;
+}
+
+.search__input--wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.search__input--wrapper input {
+  width: 776px;
+  max-width: 90%;
+  height: 75px;
+  background-image: url("../../resources/images/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-size: 26px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search__input--wrapper input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.search__input--wrapper input:active {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.jobs__list--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e5e5e5;
+  margin: 10px 0px;
+}
+
+.job__item--wrapper {
+  width: calc(50% - 40px);
+  background-color: white;
+  margin: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.job__item--wrapper .job-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .job__item--wrapper {
+    width: calc(100% - 40px);
+  }
+}
+
+.job__search--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job__search--wrapper .jobs__list--wrapper {
+  width: 70%;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .job__search--wrapper .jobs__list--wrapper {
+    width: 100%;
+  }
+}
+
+.job__search--wrapper .side__list--wrapper {
+  width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .job__search--wrapper .side__list--wrapper {
+    width: 100%;
+  }
+}
+
+.side__list--wrapper {
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+.side__list--wrapper .side__list--header {
+  padding: 00px 10px;
+}
+
+.side__list--wrapper .side--list {
+  background-color: #d9d9d9;
+  margin: 0px 10px;
+  padding: 10px;
+}
+
+.related__skills--wrapper {
+  margin: 0px 30px;
+  margin-top: 40px;
+}
+
+.skill__item--wrapper {
+  padding: 10px;
+  background-color: #e5e5e5;
+  margin: 10px 20px;
+}
+
+.skill__item--wrapper .skill-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__tags--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill__tags--wrapper .tag__item--wrapper {
+  background-color: #C4C4C4 !important;
+  border-radius: 5px !important;
+  padding: 5px 10px;
+  margin: 2px 5px;
+  flex-basis: 25%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 768px) {
+  .skill__tags--wrapper .tag__item--wrapper {
+    flex-basis: 40%;
+  }
+}

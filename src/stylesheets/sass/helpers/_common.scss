@@ -1,0 +1,33 @@
+//a tags
+a {
+   &:link {
+      text-decoration: none;
+      color: $color-black;
+   }
+   &:hover {
+      text-decoration: underline;
+   }
+   &:visited {
+      color: $color-black;
+   }
+}
+
+//ul tags
+ul {
+   list-style-type: none;
+   margin: 0px 10px;
+   padding: 0;
+   display: flex;
+   li {
+      margin: 0px 10px;
+   }
+}
+.bg-light-gray {
+   background-color: $color-gray-light;
+   height: 70px;
+   @include centerVertically;
+}
+
+.bg-white {
+   background-color: $color-white;
+}
